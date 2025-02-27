@@ -1,0 +1,10 @@
+# StreamBridge ile On-Demand Veri Yayınlama
+
+Kafka'ya veri göndermenin sadece belirli zaman aralıklarıyla (schedule) değil, aynı zamanda anlık olarak (on-demand) da yapılabilmesi mümkündür.
+StreamBridge kullanarak REST API üzerinden gelen verileri Kafka'ya iletebiliriz.
+
+Uygulamanızda bir REST API endpoint'i oluşturarak, kullanıcıların POST isteği yaparak Kafka'ya anlık olarak veri göndermesine olanak sağlandı.
+Böylece, sabit zamanlı yayın yerine ihtiyaç duyulduğunda veri göndermeyi mümkün hale getirildi.
+
+Uygulamayı refaktör ederek separation of concerns (sorumlulukların ayrılması) ilkesi uygulandı.
+Bu sayede kod daha test edilebilir ve yönetilebilir hale getirildi.
